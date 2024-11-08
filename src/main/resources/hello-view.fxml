@@ -3,6 +3,8 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
@@ -22,4 +24,12 @@
     <Button fx:id="frenchBtn" text="FR" onAction="#loadFrench"/>
     <Button fx:id="japaneseBtn" text="JP" onAction="#loadJapanese"/>
     <Button fx:id="farsiBtn" text="IR" onAction="#loadFarsi"/>
+
+    <TableView fx:id="resultsTable">
+        <columns>
+            <TableColumn fx:id="distanceColumn" text="Distance (km)"/>
+            <TableColumn fx:id="fuelColumn" text="Fuel (litres)"/>
+            <TableColumn fx:id="consumptionColumn" text="Consumption (L/100 km)"/>
+        </columns>
+    </TableView>
 </VBox>
